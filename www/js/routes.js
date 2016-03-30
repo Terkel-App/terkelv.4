@@ -78,9 +78,13 @@ angular.module('app.routes', [])
 
 
 
-    .state('sykmelding', {
+    .state('tabselev.sykmelding', {
       url: '/sykmelding',
-      templateUrl: 'templates/sykmelding.html'
+      views: {
+        'tab5': {
+          templateUrl: 'templates/sykmelding.html'
+        }
+      }
     })
 
 
@@ -91,7 +95,8 @@ angular.module('app.routes', [])
       url: '/dashbordteacher',
       views: {
         'tab6': {
-          templateUrl: 'templates/dashbord2.html'
+          templateUrl: 'templates/dashbord2.html',
+          abstract: true
         }
       }
     })
@@ -110,14 +115,24 @@ angular.module('app.routes', [])
 
 
 
-    .state('lekserPMinnelse', {
-      url: '/leksernotification',
-      templateUrl: 'templates/lekserPMinnelse.html'
+    .state('tabsteacher.lekserPMinnelse', {
+      url: '/lekserPMinnelse',
+      views: {
+        'tab6': {
+          templateUrl: 'templates/lekserPMinnelse.html'
+        }
+      }
     })
 
 
-
-
+    .state('tabsteacher.sos', {
+      url: '/sos',
+      views: {
+        'tab6': {
+          templateUrl: 'templates/sos.html'
+        }
+      }
+    })
 
     .state('tabsteacher.innboks', {
       url: '/innboks',
@@ -149,6 +164,11 @@ angular.module('app.routes', [])
       abstract:true,
       templateUrl: 'templates/tabsteacher.html'
     })
+
+
+
+
+
 
     ;
 

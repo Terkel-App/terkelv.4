@@ -1,9 +1,9 @@
 <ion-view title="Lekser påminnelse">
-    <ion-content overflow-scroll="true" padding="true" class="has-header">
+    <ion-content padding="true" class="center" style="background-color: #f1f4ed">
         <form class="list">
             <label class="item item-input">
                 <span class="input-label">Input</span>
-                <input type="text" placeholder="">
+                <textarea placeholder="Skriv" row="4" cols="50"> </textarea>
             </label>
         </form>
         <form class="list">
@@ -15,10 +15,8 @@
                 </select>
             </label>
         </form>
-        <div class="spacer" style="height: 100px;"></div>
-        <div class="button-bar">
+        <div class="spacer" style="height: 10px;"></div>
             <a ui-sref="tabsteacher.dashbord2" class="button button-balanced button-block ">Send</a>
             <a ui-sref="tabsteacher.dashbord2" class="button button-assertive button-block ">Avbryt</a>
-        </div>
     </ion-content>
 </ion-view>

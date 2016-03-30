@@ -1,15 +1,14 @@
 <ion-view title="Sykmelding">
-    <ion-content overflow-scroll="true" padding="true" class="has-header">
+    <ion-content padding="true" class="center" style="background-color: #f1f4ed;">
         <form class="list">
             <label class="item item-input" name="sykmeldingtekst">
-                <span class="input-label">Melding</span><textarea placeholder=""> </textarea>
+                <span class="input-label">Melding</span>
+                <textarea placeholder="" row="4" cols="50"> </textarea>
             </label>
             <ion-checkbox name="checkknapp">Check-knapp</ion-checkbox>
         </form>
-        <div class="spacer" style="height: 100px;"></div>
-        <div class="button-bar">
-            <a ui-sref="tabselev.dashbord3" class="button button-balanced button-block ">Send</a>
-            <a ui-sref="tabselev.dashbord3" class="button button-assertive button-block ">Abryt</a>
-        </div>
+        <div class="spacer" style="height: 50;"></div>
+            <a ui-sref="tabselev.dashbord3" class="button button-balanced button-block">Send</a>
+            <a ui-sref="tabselev.dashbord3" class="button button-assertive button-block">Abryt</a>
     </ion-content>
 </ion-view>
