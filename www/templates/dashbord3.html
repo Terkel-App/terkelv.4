@@ -3,13 +3,12 @@
         <ion-list>
             <ion-item class="item-thumbnail-left">
                 <img>
-                <h2>Skole</h2>
-                <p>elevnavn</p>
+                <h2>Skole {{skole.name}}</h2>
+                <p>elevnavn {{elev.username}}</p>
             </ion-item>
         </ion-list>
         <ion-list>
             <ion-item href="#/elevtabs/sykmelding">Sykmelding</ion-item>
-            <ion-item>Innboks</ion-item>
             <ion-item ui-sref="login">Logg ut</ion-item>
         </ion-list>
         <form class="list"></form>
